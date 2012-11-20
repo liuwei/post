@@ -1,0 +1,8 @@
+// posts -- data model
+// Loaded on both the client and the server
+
+///////////////////////////////////////////////////////////////////////////////
+// Posts
+Posts = new Meteor.Collection("posts");
+
+

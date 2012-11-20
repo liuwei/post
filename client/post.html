@@ -1,0 +1,67 @@
+<head>
+    <title>美图</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    {{> page}}
+</body>
+
+<template name="page">
+    <div class="container">
+        <div class="row">
+            <div class="span1"> </div>
+
+            <div class="span10">
+                <div class="header row">
+                    <div class="span5">
+                        <h3 style="margin-bottom: 0px">All Tomorrow's Parties</h3>
+                    </div>
+                    <div class="span5">
+                        <div style="float: right">
+                            {{loginButtons align="right"}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span6">
+                        {{> posts}}
+                        {{#if currentUser}}
+                        <div class="pagination-centered">
+                            <em><small>Double click the map to post a party!</small></em>
+                        </div>
+                        {{/if}}
+                    </div>
+                    <div class="span4">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="span1"> </div>
+        </div>
+    </div>
+</template>
+
+<template name="posts">
+    <div id="posts-view">
+        <div id="new-post-box">
+            <input type="text" id="new-post" placeholder="New Post" />
+            <input type="button" id="inc" value="New Post" />
+        </div>
+        <ul id="post-list">
+            {{#each posts}}
+               {{> post}}
+            {{/each}}
+        </ul>
+    </div>
+</template>
+
+<template name="post">
+    <li class="post">
+        <div class="display">
+            <div class="post-text">{{text}}</div>
+        </div>
+    </li>
+</template>
