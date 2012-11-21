@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea53332-1ddb-4f5d-a9db-31d6bcc21342" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/.gitignore" afterPath="$PROJECT_DIR$/.meteor/.gitignore" />
+      <change type="DELETED" beforePath="D:\Program Files\Meteor\homework\post\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\Program Files\Meteor\homework\post\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Program Files\Meteor\homework\post\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Program Files\Meteor\homework\post\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Program Files\Meteor\homework\post\.idea\post.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Program Files\Meteor\homework\post\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Program Files\Meteor\homework\post\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Program Files\Meteor\homework\post\.idea\workspace.xml" afterPath="" />
     </list>
     <ignored path="post.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,10 +29,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="model.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.41758242">
+            <state line="7" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -38,6 +44,15 @@
         <entry file="file://$PROJECT_DIR$/.meteor/packages">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.meteor/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="11" selection-end="11" vertical-scroll-proportion="0.052197803">
               <folding />
             </state>
           </provider>
@@ -120,6 +135,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="post" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="post" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -183,7 +212,11 @@
       <created>1353470115654</created>
       <updated>1353470115654</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="I want ignore .idea directory">
+      <created>1353470448218</created>
+      <updated>1353470448218</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -287,10 +320,19 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="38" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/packages">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -300,17 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="11" selection-end="11" vertical-scroll-proportion="0.052197803">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.41758242">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
