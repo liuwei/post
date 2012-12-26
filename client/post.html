@@ -1,16 +1,43 @@
 <head>
-    <title>美图</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebGL Beginner's Guide - Chapter 6 - Using Colors On Objects</title>
+<meta http-equiv='content-type' content='text/html; charset=ISO-8859-1'/>
+
+    <!-- Fragment Shader //-->
+    <script id='shader-fs' type='x-shader/x-fragment'>
+        #ifdef GL_ES
+        precision highp float;
+        #endif
+
+        void main(void) {
+        gl_FragColor = vec4(0.5, 0.9, 0.2, 1.0); //Green
+        }
+    </script>
+
+    <!-- Vertex Shader //-->
+    <script id='shader-vs' type='x-shader/x-vertex'>
+        attribute vec3 aVertexPosition;
+
+        uniform mat4 uMVMatrix;
+        uniform mat4 uPMatrix;
+
+        void main(void) {
+        gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+        gl_PointSize = 3.0;
+        }
+    </script>
+
+
 </head>
 
 <body>
-    {{> page}}
+{{> page}}
+<script type="text/javascript" src="//api.filepicker.io/v1/filepicker.js"></script>
 </body>
 
 <template name="page">
     <div class="container">
         <div class="row">
-            <div class="span1"> </div>
+            <div class="span1"></div>
 
             <div class="span10">
                 <div class="header row">
@@ -26,42 +53,55 @@
 
                 <div class="row">
                     <div class="span6">
-                        {{> posts}}
-                        {{#if currentUser}}
-                        <div class="pagination-centered">
-                            <em><small>Double click the map to post a party!</small></em>
-                        </div>
-                        {{/if}}
+                        {{> posts_template}}
                     </div>
                     <div class="span4">
-
+                        <!--<iframe frameborder="0" height="480" width="854" allowFullScreen webkitallowfullscreen="true" mozallowfullscreen="true" src="http://skfb.ly/k4j3hg2fa?autostart=0&transparent=0&autospin=0&controls=1&watermark=1"></iframe>-->
+                        {{> posts_model}}
                     </div>
                 </div>
             </div>
 
-            <div class="span1"> </div>
+            <div class="span1"></div>
         </div>
     </div>
 </template>
 
-<template name="posts">
+<template name="posts_template">
     <div id="posts-view">
         <div id="new-post-box">
-            <input type="text" id="new-post" placeholder="New Post" />
-            <input type="button" id="inc" value="New Post" />
+            <input type="text" id="new-post" placeholder="New Post"/>
+            <input type="button" id="inc" value="New Post"/>
+            <!--<input onchange="alert(event.fpfile.url)" data-fp-container="modal" data-fp-mimetypes="*/*" data-fp-apikey="ANZdON1qlTNexuzjVcBwRz" type="filepicker">-->
+            <input type="filepicker" name="picker" data-fp-apikey="ANZdON1qlTNexuzjVcBwRz"/>
         </div>
         <ul id="post-list">
             {{#each posts}}
-               {{> post}}
+            <div class="lists {{selected}}">
+                <div class="display">
+                    <a class="list-name" href="/{{_id}}">
+                        {{name}}
+                    </a>
+                </div>
+            </div>
             {{/each}}
         </ul>
+    </div>
+</template>
+
+<template name="posts_model">
+    <div id='contents'>
+        <canvas id='canvas-element-id' width='480' height='400'>
+        Your browser does not support the HTML5 canvas element.
+        </canvas>
     </div>
 </template>
 
 <template name="post">
     <li class="post">
         <div class="display">
-            <div class="post-text">{{text}}</div>
+            <div class="post-text">{{name}}</div>
+            <div class="post-img"><img src="{{img}}"/></div>
         </div>
     </li>
 </template>

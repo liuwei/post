@@ -1,7 +1,6 @@
 /* CSS declarations go here */
 #post-list .post {
     display: block;
-    height: 50px;
     position: relative;
     overflow: hidden;
     border-top: 1px solid #ccc;
@@ -21,3 +20,23 @@
     margin-left: 10px;
     font-size: 100%;
 }
+
+#post-list .post .post-img {
+    float: left;
+    margin-left: 10px;
+    font-size: 100%;
+}
+
+#lists .selected {
+    padding: 2px 6px;
+    background: #9be;
+    font-weight: bold;
+}
+
+#lists .list-name {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+canvas {border: 2px dotted blue;}

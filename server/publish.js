@@ -7,3 +7,7 @@ Meteor.publish("users", function () {
 Meteor.publish("posts", function () {
     return Posts.find();
 });
+
+Meteor.publish("models", function () {
+    return Models.find();
+});
