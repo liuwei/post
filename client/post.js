@@ -39,7 +39,7 @@ Template.posts_template.events ({
     }
 });
 
-//Template.posts_template.rendered = filepicker.constructWidget(document.getElementById('picker'));
+Template.posts_template.rendered = filepicker.constructWidget(document.getElementById('picker'));
 
 //Template.posts_model.rendered = runWebGLApp();
 
