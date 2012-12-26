@@ -32,14 +32,13 @@ Template.posts_template.selected = function () {
 
 Template.posts_template.events ({
     'click': function () {
-        alert("hahhah"+this._id);
 //        Session.set("selected_post", this._id);
 //        Router.setPost(this._id);
         runWebGLApp();
     }
 });
 
-Template.posts_template.rendered = filepicker.constructWidget(document.getElementById('picker'));
+//Template.posts_template.rendered = filepicker.constructWidget(document.getElementById('picker'));
 
 //Template.posts_model.rendered = runWebGLApp();
 
@@ -111,7 +110,6 @@ var pMatrix = mat4.create(); // The projection matrix
  * The vertex shader and the fragment shader together are called the program.
  */
 function initProgram() {
-    alert("initProgram " + gl);
     var fgShader = utils.getShader(gl, 'shader-fs');
     var vxShader = utils.getShader(gl, 'shader-vs');
 
@@ -215,7 +213,6 @@ function renderLoop() {
 function runWebGLApp(){
     //Obtains a WebGL context
     gl = utils.getGLContext('canvas-element-id');
-    alert("initProgram " + gl);
     //Initializes the program (shaders). More about this on chapter 3!
     initProgram();
     //Initializes the buffers that we are going to use to draw the cone (vertex buffer and index buffer)
