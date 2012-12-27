@@ -6,4 +6,6 @@
 Posts = new Meteor.Collection("posts");
 Models = new Meteor.Collection("models");
 
+hjh
+
 
